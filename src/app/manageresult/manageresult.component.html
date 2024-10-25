@@ -1,8 +1,8 @@
 <form>
 
-    <input name="subject" [(ngModel)]="subject">
+    <input name="subject" placeholder="search" [(ngModel)]="subject">
 
-    <button  (click)="showRecords()"> showRecords </button>
+    <button  (click)="showRecords()"> Show Records </button>
 
 </form>
 
@@ -33,6 +33,9 @@
 
     <br><br>
 <!--  pages[1,2,3,4] -->
+<div *ngIf="results.length === 0" style="text-align: center; color: red; margin-top: 20px; font-size: 40px;">
+    No Records Found
+</div>
     <input  type=button  *ngFor="let pageno of pages" [value]="pageno" (click)="getResults2(pageno)">
 <!-- (1)(2)(3)(4) -->
 

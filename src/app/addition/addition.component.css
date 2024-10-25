@@ -1,5 +1,53 @@
-img
+/* img
 {
     width: 100px;
     height: 100px;
+} */
+
+/* styles.css */
+
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 20px;
+}
+
+/* Styles for the message */
+span {
+    color: red;
+    font-size: 30px;
+    display: block; /* Ensures it takes full width */
+    margin-bottom: 20px; /* Space below the message */
+}
+
+/* Input fields */
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Button styles */
+input[type="button"] {
+    background-color: #35424a;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="button"]:hover {
+    background-color: #e8491d;
+}
+
+/* Image styles */
+img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px; /* Space above the image */
 }

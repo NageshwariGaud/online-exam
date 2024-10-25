@@ -1,17 +1,86 @@
-input
-{
-    display: block;
+/* fabulous-login.css */
 
-    padding: 10px;
-
-    margin: 15px;
+/* General styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background: url('https://wallpapercave.com/wp/wp4390828.jpg') no-repeat center center fixed; /* Background image */
+    background-size: cover; /* Cover the entire viewport */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full height */
+    margin: 0;
 }
 
-select
-{
-    padding: 10px;
+/* Form styling */
+form {
+    background-color: rgba(255, 255, 255, 0.8); /* Slightly transparent white background */
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 8px 30px rgba(0, 114, 255, 0.5); /* Blue shadow */
+    width: 350px; /* Fixed width for the form */
+}
 
-    background-color: black;
+/* Title */
+h2 {
+    text-align: center;
+    color: #333; /* Dark gray for contrast */
+    margin-bottom: 20px; /* Space below the title */
+}
 
+/* Input fields and select */
+input[type="text"],
+input[type="password"],
+select {
+    width: calc(100% - 24px); /* Adjust width to account for padding */
+    padding: 12px; /* Equal padding for top and bottom */
+    margin: 10px 0; /* Space between fields */
+    border: 1px solid #ccc; /* Light border */
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+select:focus {
+    border-color: #0072ff; /* Highlight border color */
+    box-shadow: 0 0 5px rgba(0, 114, 255, 0.5); /* Subtle shadow on focus */
+    outline: none; /* Removes the default outline */
+}
+
+/* Button styles */
+input[type="button"] {
+    background-color: #0072ff; /* Button background color */
     color: white;
+    padding: 14px; /* Increased padding for a larger button */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px; /* Increased font size for better visibility */
+    transition: background-color 0.3s, transform 0.2s, box-shadow 0.2s; /* Add box-shadow transition */
+    margin: 10px 0; /* Space between buttons */
+    box-shadow: 0 4px 15px rgba(0, 114, 255, 0.3); /* Blue shadow */
+    width: calc(100% - 24px); /* Match width with input boxes */
+}
+
+input[type="button"]:hover {
+    background-color: #005bb5; /* Darker shade on hover */
+    box-shadow: 0 6px 20px rgba(0, 114, 255, 0.5); /* Darker blue shadow on hover */
+}
+
+/* Message styling */
+span {
+    color: red;
+    font-size: large;
+    text-align: center; /* Center the message */
+    display: block; /* Ensure it takes full width */
+    margin-top: 20px; /* Space above the message */
+}
+
+/* Responsive adjustments */
+@media (max-width: 400px) {
+    form {
+        width: 90%; /* Make the form responsive on smaller screens */
+    }
 }

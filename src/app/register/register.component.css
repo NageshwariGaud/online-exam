@@ -1,14 +1,87 @@
-table,th,td
-{
-    border:1px solid black;
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('https://th.bing.com/th/id/OIP.wGnxE9N6KD2MjnEMvKqJrwHaEK?rs=1&pid=ImgDetMain'); /* Add your image URL here */
+    background-size: cover; /* Cover the entire viewport */
+    background-position: center; /* Center the background image */
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center horizontally */
+    justify-content: center; /* Center vertically */
+    height: 100vh; /* Full viewport height */
+    color: #fff; /* Change text color to white for better contrast */
 }
 
-th,td
-{
+/* Title styling */
+.title {
+    margin-bottom: 20px;
+    font-size: 2.5em; /* Larger font size for the title */
+    text-align: center; /* Center the title */
+}
+
+/* Form styling */
+form {
+    background: rgba(255, 255, 255, 0.9); /* Slightly transparent white background */
+    padding: 30px;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    max-width: 400px; /* Set a maximum width for the form */
+    width: 100%; /* Ensure it is responsive */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+}
+
+/* Hover effect on the form */
+form:hover {
+    transform: translateY(-5px); /* Slight upward movement */
+    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+}
+
+/* Input fields */
+input[type="text"],
+input[type="password"],
+input[type="number"],
+input[type="email"] {
+    width: calc(100% - 20px); /* Full width minus padding */
     padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+    transition: border-color 0.3s ease; /* Transition for border color */
 }
 
-table
-{
-    margin: auto;
+/* Focus effect on input fields */
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus {
+    border-color: #007bff; /* Change border color on focus */
+    outline: none; /* Remove default outline */
+}
+
+/* Button styling */
+input[type="button"] {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+    width: 100%; /* Full width button */
+    transition: background-color 0.3s ease; /* Smooth background color transition */
+}
+
+input[type="button"]:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
+
+/* Message styling */
+span {
+    display: block;
+    margin-top: 15px;
+    font-size: 40px;
+    color: black; /* Color for the message */
+    text-align: center; /* Center the message */
 }

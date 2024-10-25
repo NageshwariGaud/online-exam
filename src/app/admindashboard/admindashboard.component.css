@@ -1,0 +1,43 @@
+/* fabulous-buttons.css */
+
+/* General styles for the container */
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Button styles */
+input[type="button"] {
+    background-color: #007bff; /* Bootstrap primary color */
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s, transform 0.2s;
+    margin: 10px; /* Space between buttons */
+}
+
+input[type="button"]:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+input[type="button"]:active {
+    transform: scale(0.95); /* Slightly shrink on click */
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    input[type="button"] {
+        width: 100%; /* Full width on smaller screens */
+        padding: 15px; /* Reduced padding */
+    }
+}
+

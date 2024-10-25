@@ -1,21 +1,84 @@
-table,td,th
-{
-    border: 1px solid blueviolet;
+/* General styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4; /* Light gray background for contrast */
+    padding: 20px;
 }
 
-td,th
-{
-    padding: 10px;
+/* Form styling */
+form {
+    background-color: white; /* White background for the form */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Light shadow */
+    margin-bottom: 30px; /* Space below the form */
 }
 
-input[type='button']
-{
-    color: white;
-
-    font-size: 30px;
-
-    background-color: black;
+/* Input field styling */
+input[name="subject"] {
+    width: calc(100% - 24px); /* Full width with padding adjustment */
+    padding: 12px; /* Padding for comfort */
+    margin-bottom: 10px; /* Space below the input */
+    border: 1px solid #ccc; /* Light border */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 16px; /* Font size */
+    transition: border-color 0.3s; /* Transition for focus effect */
 }
 
+input[name="subject"]:focus {
+    border-color: #0072ff; /* Blue border on focus */
+    outline: none; /* Remove outline */
+}
 
+/* Button styling */
+button {
+    background-color: #0072ff; /* Button color */
+    color: white; /* Text color */
+    padding: 12px; /* Padding */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor */
+    font-size: 16px; /* Font size */
+    transition: background-color 0.3s; /* Transition for hover effect */
+    width: 100%; /* Full width */
+}
 
+button:hover {
+    background-color: #005bb5; /* Darker blue on hover */
+}
+
+/* Table styling */
+table {
+    width: 100%; /* Full width */
+    border-collapse: collapse; /* Collapse borders */
+    margin-top: 20px; /* Space above the table */
+    background-color: white; /* Table background */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Light shadow */
+}
+
+th, td {
+    padding: 12px; /* Padding inside cells */
+    text-align: left; /* Left alignment */
+    border-bottom: 1px solid #ccc; /* Border between rows */
+}
+
+th {
+    background-color: #0072ff; /* Header background color */
+    color: white; /* Header text color */
+}
+
+/* Page button styling */
+input[type="button"] {
+    background-color: #0072ff; /* Page button color */
+    color: white; /* Text color */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor */
+    padding: 10px 15px; /* Padding */
+    margin: 5px; /* Space between buttons */
+    transition: background-color 0.3s; /* Transition for hover effect */
+}
+
+input[type="button"]:hover {
+    background-color: #005bb5; /* Darker shade on hover */
+}

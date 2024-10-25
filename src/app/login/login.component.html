@@ -11,12 +11,12 @@
 
 	<form>
 	
-		<input type="text"  name="username" [(ngModel)]="user.username">
+		<input type="text" placeholder="username" name="username" [(ngModel)]="user.username">
 		
-		<input type="password"  name="password" [(ngModel)]="user.password">
+		<input type="password" placeholder="password" name="password" [(ngModel)]="user.password">
 
-        <select name="subject" name="subject" [(ngModel)]="subject">
-
+        <select name="subject" placeholder="subject" name="subject" [(ngModel)]="subject">
+				<option value="" disabled selected>Select Subject</option>
                 <option *ngFor="let subject of subjects" value="{{subject}}">{{subject}}</option>
             
         </select>

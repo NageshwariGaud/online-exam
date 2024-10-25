@@ -23,9 +23,9 @@ export class QuestionComponent implements OnInit
   
   answer:Answer=new Answer(0,'','','');
   
-  duration:any=181;// 181 seconds
+  duration:any=600;// 181 seconds
 
-  durationMessage='';
+  durationMessage='Time Remaining';
 
   durationInterval:any='';
 

@@ -38,7 +38,8 @@ export const routes: Routes = [
 
     {path:'manageresult',component:ManageresultComponent},
 
-    {path:'',redirectTo:'register',pathMatch:'full'}
+    {path:'',redirectTo:'register',pathMatch:'full'},
+
 
 
 ];

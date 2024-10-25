@@ -1,0 +1,64 @@
+/* General styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4; /* Light gray background */
+    padding: 20px; /* Padding around the body */
+}
+
+/* Centered div */
+div {
+    text-align: left; /* Align text to the left */
+    margin: auto; /* Center the div */
+    background-color: white; /* White background for the form */
+    padding: 20px; /* Padding around the form */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Light shadow */
+    max-width: 600px; /* Max width for the form */
+}
+
+/* Flexbox for side-by-side layout */
+.form-group {
+    display: flex; /* Use flexbox */
+    justify-content: space-between; /* Space between elements */
+    margin-bottom: 15px; /* Space below each group */
+}
+
+/* Input field styling */
+input[type="text"] {
+    width: calc(100% - 24px); /* Full width with padding adjustment */
+    padding: 12px; /* Padding for comfort */
+    border: 1px solid #ccc; /* Light border */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 16px; /* Font size */
+    transition: border-color 0.3s; /* Transition for focus effect */
+}
+
+input[type="text"]:focus {
+    border-color: #0072ff; /* Blue border on focus */
+    outline: none; /* Remove outline */
+}
+
+/* Button styling */
+input[type="button"] {
+    background-color: #0072ff; /* Button color */
+    color: white; /* Text color */
+    padding: 12px; /* Padding */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor */
+    font-size: 16px; /* Font size */
+    transition: background-color 0.3s; /* Transition for hover effect */
+    margin: 5px 0; /* Space above and below */
+    width: calc(100% - 24px); /* Full width */
+}
+
+input[type="button"]:hover {
+    background-color: #005bb5; /* Darker blue on hover */
+}
+
+/* Message styling */
+.message {
+    margin-top: 20px; /* Space above the message */
+    color: green; /* Message color */
+    font-size: 30px; /* Font size */
+}

@@ -1,14 +1,56 @@
-table,th,td
-{
-    border:1px solid black;
+/* styles.css */
+
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 20px;
 }
 
-th,td
-{
-    padding: 10px;
+/* Score message styling */
+span {
+    color: red;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    display: block; /* Ensure it takes full width */
 }
 
-table
-{
-    margin: auto;
+/* Table styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
 }
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 12px;
+    text-align: left;
+}
+
+/* Header styling */
+th {
+    background-color: #007bff;
+    color: white;
+}
+
+/* Row styling based on comparison */
+tr {
+    transition: background-color 0.3s ease;
+    color: white;
+
+}
+
+/* Adjust row background color dynamically */
+tr.correct {
+    
+    background-color: #d4edda; /* Light green for correct answers */
+}
+
+tr.incorrect {
+
+    background-color: #f8d7da; /* Light red for incorrect answers */
+}
+
+
+
